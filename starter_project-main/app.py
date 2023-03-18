@@ -64,10 +64,6 @@ def career():
       return render_template("career.html")
 
 
-@app.route('/contact')
-def contact():
-    return 'Hello, World'
-
 @app.route('/thankyou',methods = ["POST"])
 def contactFormFilled():
     name = request.form["name"]
